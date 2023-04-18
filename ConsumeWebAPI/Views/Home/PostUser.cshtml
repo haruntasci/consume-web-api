@@ -1,0 +1,28 @@
+﻿@model ConsumeWebAPI.Models.UserEntity
+
+<h1>Post User</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PostUser">
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Emailaddress" class="control-label"></label>
+                <input asp-for="Emailaddress" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobilenumber" class="control-label"></label>
+                <input asp-for="Mobilenumber" class="form-control" />
+            </div>
+            <button class="btn btn-info">Submit</button>
+
+        </form>
+    </div>
+</div>

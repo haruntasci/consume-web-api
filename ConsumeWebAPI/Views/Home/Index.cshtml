@@ -1,0 +1,31 @@
+﻿@using System.Data
+@model DataTable
+
+@{
+    ViewData["Title"] = "Fetching Data";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayName("Username")</th>
+            <th>@Html.DisplayName("Password")</th>
+            <th>@Html.DisplayName("Emailaddress")</th>
+            <th>@Html.DisplayName("Mobilenumber")</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+         @foreach(DataRow row in Model.Rows)
+            {
+                <tr>
+                    <td>@row["Username"]</td>
+                    <td>@row["Password"]</td>
+                    <td>@row["Emailaddress"]</td>
+                    <td>@row["Mobilenumber"]</td>
+                </tr>
+            }
+
+    </tbody>
+
+</table>
